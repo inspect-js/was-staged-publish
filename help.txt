@@ -1,0 +1,13 @@
+Usage:
+was-staged-publish <pkg>[@<version>] [--registry <url>]
+
+Determine whether a published npm version was a staged publish (and thus approved by a human passing a 2FA challenge).
+
+`version` may be an exact version or a dist-tag; it defaults to `latest`.
+`--registry` defaults to https://registry.npmjs.org.
+
+Exit codes:
+  0  staged (for sure)
+  1  definitely not staged
+  2  unknown (cannot be determined)
+  3  fetch error
