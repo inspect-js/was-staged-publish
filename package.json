@@ -1,6 +1,6 @@
 {
 	"name": "was-staged-publish",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Determine, from an npm packument, whether a published version was a staged publish (and thus 2FA-approved by a human)",
 	"bin": "./bin.mjs",
 	"main": false,
