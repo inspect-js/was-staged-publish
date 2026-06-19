@@ -12,10 +12,6 @@ jobs:
       range: '^24.16 || ^26.3'
       type: minors
       command: npm run tests-only
-      # c8@11's `yargs@17` ships an extensionless `./yargs` under `"type":"module"`,
-      # which crashes under Node >=22's `require(esm)`. Set it to CommonJS so it loads.
-      # Guarded (and single-line, since the input is eval'd) so it no-ops once fixed upstream.
-      after_install: "if npm pkg get type --prefix node_modules/yargs | grep -q module; then npm pkg set type=commonjs --prefix node_modules/yargs; fi"
 
   node:
     name: 'node >= 24'
