@@ -50,9 +50,9 @@
 	},
 	"homepage": "https://github.com/inspect-js/was-staged-publish#readme",
 	"dependencies": {
-		"pacote": "^21.5.0",
-		"pargs": "^1.4.0",
-		"semver": "^7.8.3"
+		"pacote": "^21.5.1",
+		"pargs": "^1.4.2",
+		"semver": "^7.8.4"
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^22.2.3",
